@@ -1,0 +1,610 @@
+/* --body-font-family: 'Unbounded', cursive; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Unbounded', sans-serif;
+    box-sizing: none;
+}
+
+.max-width {
+    width: 1300px;
+    margin: auto;
+}
+
+.nav-bar {
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    z-index: 999;
+    background-color: #CEA154;
+}
+
+.nav-content,
+.nav-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu ul li a {
+    color: black;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    transition: 0.3s;
+    text-decoration: none;
+    padding-bottom: 60px;
+}
+
+.nav-services {
+    position: relative;
+}
+
+.nav-menu ul li a:hover {
+    color: white;
+}
+
+.dropdown {
+    display: none;
+}
+
+.nav-services:hover .dropdown {
+    position: absolute;
+    display: block;
+    padding: 20px;
+    z-index: 1;
+    background-color: #CEA154;
+    top: 90px;
+    left: -15px;
+    width: 200px;
+}
+
+.nav-services .dropdown a {
+    float: none;
+    text-align: left;
+    display: block;
+}
+
+.home {
+    background-image: linear-gradient(rgba(255, 221, 0, 0.557), rgba(0, 255, 174, 0.4)), url(../images/client-doing-hair-cut-barber-shop-salon.jpg);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    margin-bottom: 4rem;
+}
+
+.home-content h1 {
+    font-size: 60px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.home-content p {
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+}
+
+.about-btn {
+    padding: 7px 35px 7px 35px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.about-btn:hover {
+    border: 2px solid black;
+    color: black;
+}
+
+.whatwedo-btn {
+    padding: 7px 35px 7px 35px;
+    background: rgb(163, 0, 0);
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+    border: 2px solid rgb(163, 0, 0);
+    font-size: 17px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.whatwedo-btn:hover {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.carousal {
+    padding-bottom: 4rem;
+}
+
+.carousal-content h1 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    padding-bottom: 1rem;
+}
+
+.carousal-content p {
+    font-size: 18px;
+    color: gray;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.39)
+}
+
+.carousal-content p span {
+    color: rgb(224, 211, 25);
+}
+
+.carousal-cards h2 {
+    padding: 2rem 0 4rem 0;
+    color: rgb(189, 0, 0);
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 29%;
+    background-color: #CEA154;
+    margin-bottom: 50px;
+    margin-right: 45px;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.box img {
+    width: 100%;
+    height: 30vh;
+    transform: rotate(10deg);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.cards-bio {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    bottom: 20px;
+    right: 40px;
+    padding: 15px 30px 15px 30px;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+.cards-bio p {
+    margin-right: 65px;
+    color: gray;
+    font-size: 18px;
+}
+
+.card-icons {
+    display: flex;
+}
+
+.card-icons i {
+    margin-left: 20px;
+    background: rgb(180, 24, 0);
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.card-name p {
+    align-items: center;
+}
+
+.offer {
+    background-image: url(../images/barber-customer-giving-high-five.jpg);
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    margin-bottom: 4rem;
+}
+
+.offer-content h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    color: rgb(163, 0, 0);
+    padding-bottom: 20px;
+}
+
+.offer-content p {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+.offer-content h3 {
+    background-color: #CEA154;
+    width: 20%;
+    display: inline-block;
+    padding: 8px 15px 8px 15px;
+    border-radius: 20px;
+}
+
+.services-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services-card1,
+.services-card2,
+.services-card3,
+.services-card4 {
+    width: 44%;
+    height: 32vh;
+    border-radius: 15px;
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.services-card1 {
+    background-image: url('../images/woman-cutting-hair-man-salon.jpg');
+}
+
+.services-card2 {
+    background-image: url('../images/hairdresser-grooming-their-client.jpg');
+}
+
+.services-card3 {
+    background-image: url('../images/hairdresser-grooming-client.jpg');
+}
+
+.services-card4 {
+    background-image: url('../images/boy-getting-haircut-salon-front-view.jpg');
+}
+
+.services-box1,
+.services-box2,
+.services-box3,
+.services-box4 {
+    height: 90%;
+    padding: 15px;
+    border: 1px solid rgb(181, 181, 181);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    align-items: end;
+    color: white;
+    font-size: 24px;
+}
+
+.service-price {
+    background: #CEA154;
+    padding: 7px 15px 7px 15px;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+.form {
+    background-image: url('../images/vintage-chair-barbershop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    margin-bottom: 4rem;
+}
+
+.form-content {
+    margin-top: 30px;
+    background: white;
+    padding: 50px;
+    border-radius: 12px;
+}
+
+.form-bio {
+    text-align: center;
+}
+
+.form-fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-bio input {
+    width: 100%;
+    margin: 0 20px 20px 0;
+    padding: 12px 8px 12px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    color: gray;
+    border: 1.5px solid rgb(180, 180, 180);
+    border-radius: 8px;
+}
+
+.form-bio select {
+    width: 100%;
+    margin: 0 20px 20px 0;
+    padding: 12px 30px 12px 13px;
+    font-size: 15px;
+    font-weight: bold;
+    color: gray;
+    border: 1.5px solid rgb(180, 180, 180);
+    border-radius: 8px;
+}
+
+.form-inputs textarea {
+    font-size: 15px;
+    font-weight: bold;
+    color: gray;
+    display: flex;
+    justify-content: start;
+    padding: 12px 8px 12px 15px;
+    border: 1.5px solid rgb(180, 180, 180);
+    border-radius: 8px;
+}
+
+.form-inputs button {
+    background: rgb(192, 8, 45);
+    border: 1.5px solid rgb(192, 8, 45);
+    padding: 10px 25px 10px 25px;
+    font-size: 18px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.form-inputs button:hover {
+    background: white;
+    border: 2px solid rgb(192, 8, 45);
+    color: rgb(192, 8, 45);
+}
+
+.form-content h1 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-content p {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+}
+
+.form-content {
+    text-align: center;
+}
+
+.price {
+    margin-bottom: 4rem;
+}
+
+.price-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-heading h1 {
+    font-size: 40px;
+}
+
+.price-heading h3 {
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+
+.deals-details {
+    width: 100%;
+}
+
+.deals {
+    display: flex;
+    align-items: end;
+}
+
+.deals h1 {
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.deals p {
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #CEA154;
+}
+
+.middle_line1 {
+    width: 25%;
+    height: 2px;
+    background: gray;
+}
+
+.middle_line2 {
+    width: 20.5%;
+    height: 2px;
+    background: gray;
+}
+
+.middle_line3 {
+    width: 22.5%;
+    height: 2px;
+    background: gray;
+}
+
+.middle_line4 {
+    width: 25.8%;
+    height: 2px;
+    background: gray;
+}
+
+.middle_line5 {
+    width: 17%;
+    height: 2px;
+    background: gray;
+}
+
+.price-img {
+    width: 50%;
+    background-color: #CEA154;
+    margin-bottom: 50px;
+    margin-right: 45px;
+    border-radius: 20px;
+}
+
+.price-img img {
+    width: 100%;
+    height: 30vh;
+    transform: rotate(10deg);
+    border-radius: 20px;
+}
+
+.say-hello {
+    background: rgb(233, 236, 255);
+    padding: 100px;
+    margin-bottom: 4rem;
+}
+
+.hello-content h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.information-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.information-left h1 {
+    font-size: 35px;
+    padding-bottom: 15px;
+}
+
+.information-left p {
+    font-size: 22px;
+    color: #CEA154;
+    padding-bottom: 10px;
+}
+
+.information-icons {
+    display: flex;
+    justify-content: start;
+}
+
+.information-icons i {
+    padding: 10px;
+    margin-top: 10px;
+    background: rgb(146, 2, 31);
+    border-radius: 50%;
+    color: white;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.information-right {
+    width: 35%;
+    background-color: #CEA154;
+    margin-bottom: 50px;
+    margin-right: 45px;
+    border-radius: 20px;
+}
+
+.right-content {
+    width: 90%;
+    height: 15vh;
+    transform: rotate(10deg);
+    border-radius: 20px;
+    background: rgb(202, 1, 42);
+    padding: 20px 0 80px 40px;
+    align-items: center;
+}
+
+.right-info {
+    transform: rotate(-10deg);
+}
+
+.right-info i {
+    padding: 25px;
+    margin-bottom: 20px;
+    background: #CEA154;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.right-info h1 {
+    color: white;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.right-info h2 {
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.map-address {
+    padding-bottom: 4rem;
+}
+
+.footer-content h1 {
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+.footer-content {
+    padding-bottom: 4rem;
+}
+
+.footer-address {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-address h2 {
+    font-size: 20px;
+    color: rgb(173, 0, 35);
+    padding-bottom: 5px;
+}
+
+.footer-address p {
+    font-size: 22px;
+    color: gray;
+}
+
+.copy-right {
+    padding-bottom: 4rem;
+}
+
+.copy-right p {
+    font-size: 17px;
+    color: rgb(159, 159, 159);
+}
+
+.copy-right span {
+    color: #CEA154;
+}
